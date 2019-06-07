@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./script.js"></script>
+
+	<title>Class Marksheet</title>
+</head>
+<script>
+
+</script>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row" style="margin-top:2em">
+			<div class="col-md-12" style="text-align:center">
+				<h1 style="font-weight: bold">Class Marksheet</h1>
+			</div>
+		</div>
+	</div>
+
+	<!-- Input Form -->
+	<div class="container-fluid input-form">
+		<div class="input-group input-group-sm" style="width: 30em;">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-sm">Họ và tên</span>
+			</div>
+			<input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="yourName">
+		</div>
+	</div>
+	<div class="container-fluid input-form">
+		<div class="input-group input-group-sm" style="width: 30em;">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-sm">Điểm toán</span>
+			</div>
+			<input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="diemToan">
+		</div>
+	</div>
+	<div class="container-fluid input-form">
+		<div class="input-group input-group-sm" style="width: 30em;">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-sm">Điểm lý</span>
+			</div>
+			<input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="diemLy">
+		</div>
+	</div>
+	<div class="container-fluid input-form">
+		<div class="input-group input-group-sm" style="width: 30em;">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-sm">Điểm hóa</span>
+			</div>
+			<input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="diemHoa">
+		</div>
+	</div>
+
+	<!-- Button Nhập -->
+	<div class="container-fluid submit">
+		<button id="buttonNhap" class="btn btn-primary">Nhập</button>
+	</div>
+
+	<!-- Table -->
+	<div class="container-fluid">
+		<div class="row">
+			<table class="table table-bordered" style="margin: 1em 2em">
+				<thead>
+					<tr>
+						<th>STT</th>
+						<th>Họ tên</th>
+						<th>Toán</th>
+						<th>Lý</th>
+						<th>Hóa</th>
+						<th>Trung bình</th>
+					</tr>
+				</thead>
+				<tbody id="listStudent">
+					<tr>
+						<td>1</td>
+						<td>Hạ An</td>
+						<td>9</td>
+						<td>8.5</td>
+						<td>7</td>
+						<td>8.2</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Minh Phú</td>
+						<td>9</td>
+						<td>10</td>
+						<td>9</td>
+						<td>9.3</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Quốc Thái</td>
+						<td>7</td>
+						<td>6</td>
+						<td>8</td>
+						<td>7.0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<!-- 2 Button cuối -->
+	<div class="container-fluid submit">
+		<button id="averagemark" class="btn btn-primary">Tính điểm trung bình</button>
+		<button id="classification" class="btn btn-primary">Xác định học sinh giỏi</button>
+	</div>
+
+
+
+</body>
+
+</html>

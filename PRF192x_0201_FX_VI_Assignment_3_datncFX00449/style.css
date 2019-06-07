@@ -1,0 +1,47 @@
+body {
+	font-size: 16px;
+	font-family: serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.input-form,
+.submit {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1em;
+}
+
+.input-group-text {
+	width: 5.5em;
+	border-radius: 1em;
+}
+
+.btn {
+	margin: 0 0.2em;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0.1em 0.1em;
+}
+
+td,
+th {
+	text-align: center;
+}
+
+.hsGioi {
+	color: red;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		min-width: 500px;
+	}
+}
