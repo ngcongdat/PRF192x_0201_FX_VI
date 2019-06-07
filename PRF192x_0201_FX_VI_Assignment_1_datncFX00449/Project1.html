@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	
+	<body>
+		<p>Nhấn vào nút để hiện thị thông báo!!!</p>
+		<button onclick=" buttonNotify()">Thông báo</button>
+		<div id="buttonNext" style="display: none; margin-top: 10px;">
+			<button onclick="buttonNext()">Bước tiếp theo</button>
+			<div id="yourInfo" style="background-color: lightpink; display: none;">	
+				<p id="name"></p>
+				<p id="city"></p>
+				<p id="mobile"></p>
+				<p id="email"></p>
+				<p id="jobs"></p>
+			</div>
+		</div>
+		<script>
+			function buttonNotify() {			
+				alert("Chào mừng bạn đến với ứng dụng JavaScript đầu tiên");
+				var name = prompt("Hãy nhập tên của bạn");					
+				var city = prompt("Hãy nhập thành phố bạn đang sống");
+				var mobile = prompt("Hãy nhập số điện thoại của bạn");
+				var email = prompt("Hãy nhập E-mail của bạn");
+				var jobs = prompt("Hãy nhập công việc bạn đang làm");
+				var x = document.getElementById("buttonNext");
+				if (name == null && city == null && mobile == null && email == null && jobs == null) {
+					x.style.display = "none";
+					alert("Vui lòng nhập thông tin của bạn!");
+				}
+				else if (name == "" && city == "" && mobile == "" && email == "" && jobs == "") {
+					x.style.display = "none";
+					alert("Vui lòng nhập thông tin của bạn!");
+				}
+				else {
+					x.style.display = "block";
+				}
+				document.getElementById("name").innerHTML = "Tên của bạn: " + name;
+				document.getElementById("city").innerHTML = "Thành phố bạn đang sống: " + city;
+				document.getElementById("mobile").innerHTML = "Số điện thoại của bạn: " + mobile;
+				document.getElementById("email").innerHTML = "E-mail của bạn: " + email;
+				document.getElementById("jobs").innerHTML = "Công việc bạn đang làm: " + jobs;				
+			}
+			
+			function buttonNext() {
+				var x = document.getElementById("yourInfo");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				}
+				else {
+					x.style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>
